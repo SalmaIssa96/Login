@@ -8,7 +8,7 @@ const redirect = () => {
   if (localStorage.getItem('currentUser')) {
     currentUser = JSON.parse(localStorage.getItem('currentUser'));
     if (currentUser) {
-      window.location = `${window.location.origin}/index.html`;
+      window.location = `${window.location.origin}/Login/index.html`;
     }
   }
 };

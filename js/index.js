@@ -3,12 +3,12 @@ var redirect = () => {
   if (localStorage.getItem('currentUser')) {
     currentUser = JSON.parse(localStorage.getItem('currentUser'));
     if (!currentUser) {
-      window.location = `${window.location.origin}/login.html`;
+      window.location = `${window.location.origin}/Login/login.html`;
     } else {
       welcomeUser.innerHTML = `Welcome ${currentUser.name}`;
     }
   } else {
-    window.location = `${window.location.origin}/login.html`;
+    window.location = `${window.location.origin}/Login/login.html`;
   }
 };
 
