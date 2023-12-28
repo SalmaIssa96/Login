@@ -1,0 +1,37 @@
+body {
+  background-color: #24353f;
+  font-family: 'Open Sans', sans-serif;
+}
+.sgin-card {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+.sgin-card h1 {
+  color: #17a2b8;
+}
+
+.form-control {
+  background-color: transparent !important;
+  color: #fff !important;
+}
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+}
+
+.form-control::placeholder {
+  color: #b4b4b4; /* Change the color to desired value */
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+}
+
+.navbar[data-bs-theme='dark'] {
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+  background-color: #24353f;
+  border: none;
+}
+
+.home-content {
+  height: 75vh;
+}
