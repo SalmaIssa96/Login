@@ -8,7 +8,7 @@ const redirect = () => {
   if (localStorage.getItem('currentUser')) {
     currentUser = JSON.parse(localStorage.getItem('currentUser'));
     if (currentUser) {
-      window.location = `${window.location}/index.html`;
+      window.location = `${window.location.origin}/index.html`;
     }
   }
 };
@@ -31,12 +31,12 @@ function login() {
     currentUser = user;
     localStorage.setItem('currentUser', JSON.stringify(currentUser));
     redirect();
-    warning(warningInput, 'Sgin in Success', 'text-success');
+    warning(warningInput, 'Sign in Success', 'text-success');
   } else {
     console.log('false');
     warning(
       warningInput,
-      'Sgin in failed , email or password  not correct',
+      'Sign in failed , email or password  not correct',
       'text-danger'
     );
   }
