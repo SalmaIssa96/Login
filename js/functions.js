@@ -21,3 +21,5 @@ function validatemail(email, inputElement, warningElement) {
 if (localStorage.getItem('users')) {
   users = JSON.parse(localStorage.getItem('users'));
 }
+
+// console.log
